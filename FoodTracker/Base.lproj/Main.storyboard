@@ -41,11 +41,25 @@
                                     <constraint firstAttribute="trailing" secondItem="NiS-Jf-kua" secondAttribute="trailing" constant="20" symbolic="YES" id="Fqj-L2-oTt"/>
                                 </constraints>
                             </stackView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="kme-YL-0dP">
+                                <rect key="frame" x="20" y="172" width="374" height="374"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kme-YL-0dP" secondAttribute="height" multiplier="1:1" id="iel-7n-uQA"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="220-OP-iMk" appends="YES" id="T4U-MM-B2e"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kme-YL-0dP" secondAttribute="trailing" constant="20" id="7cZ-2b-e6W"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="58f-YS-vy3" secondAttribute="trailing" constant="20" id="J1a-M4-Q37"/>
+                            <constraint firstItem="kme-YL-0dP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="JV4-6y-L0j"/>
                             <constraint firstItem="58f-YS-vy3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="NM1-nt-B3R"/>
+                            <constraint firstItem="kme-YL-0dP" firstAttribute="top" secondItem="58f-YS-vy3" secondAttribute="bottom" constant="7.5" id="NkL-Fx-38c"/>
+                            <constraint firstItem="kme-YL-0dP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ufb-3E-Gjp"/>
                             <constraint firstItem="58f-YS-vy3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="y3m-pm-MGg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -53,11 +67,20 @@
                     <connections>
                         <outlet property="mealNameLabel" destination="dCm-S6-rvv" id="Nt3-6I-yav"/>
                         <outlet property="nameTextField" destination="NiS-Jf-kua" id="Brj-DI-cyP"/>
+                        <outlet property="photoImageView" destination="kme-YL-0dP" id="2uU-cG-XPn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="220-OP-iMk">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="M3g-kW-uRP"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="140.57971014492756" y="138.61607142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="defaultPhoto" width="540" height="540"/>
+    </resources>
 </document>
