@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9791A29E23EB8EAC00F4C630 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9791A29D23EB8EAC00F4C630 /* RatingControl.swift */; };
 		97E3728E23EA434C0057CA02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E3728D23EA434C0057CA02 /* AppDelegate.swift */; };
 		97E3729023EA434C0057CA02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E3728F23EA434C0057CA02 /* SceneDelegate.swift */; };
 		97E3729223EA434C0057CA02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E3729123EA434C0057CA02 /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9791A29D23EB8EAC00F4C630 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		97E3728A23EA434C0057CA02 /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E3728D23EA434C0057CA02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97E3728F23EA434C0057CA02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				97E3728D23EA434C0057CA02 /* AppDelegate.swift */,
 				97E3728F23EA434C0057CA02 /* SceneDelegate.swift */,
 				97E3729123EA434C0057CA02 /* ViewController.swift */,
+				9791A29D23EB8EAC00F4C630 /* RatingControl.swift */,
 				97E3729323EA434C0057CA02 /* Main.storyboard */,
 				97E3729623EA434D0057CA02 /* Assets.xcassets */,
 				97E3729823EA434D0057CA02 /* LaunchScreen.storyboard */,
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9791A29E23EB8EAC00F4C630 /* RatingControl.swift in Sources */,
 				97E3729223EA434C0057CA02 /* ViewController.swift in Sources */,
 				97E3728E23EA434C0057CA02 /* AppDelegate.swift in Sources */,
 				97E3729023EA434C0057CA02 /* SceneDelegate.swift in Sources */,
